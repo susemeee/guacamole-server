@@ -195,7 +195,7 @@ int guac_webp_write(guac_socket* socket, guac_stream* stream,
     config.lossless = lossless;
     config.quality = quality;
     config.thread_level = 1; /* Multi threaded */
-    config.method = 2; /* Compression method (0=fast/larger, 6=slow/smaller) */
+    config.method = 0; /* Compression method (0=fast/larger, 6=slow/smaller) */
 
     /* Validate configuration */
     WebPValidateConfig(&config);
